@@ -1,0 +1,8 @@
+---
+layout: layouts/master.dot
+title: Argus
+---
+
+[[##body:
+    Hello index page. Hello User!
+#]]
