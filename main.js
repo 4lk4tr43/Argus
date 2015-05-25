@@ -21,7 +21,11 @@ var Application;
             this._express.set("view engine", "dot");
         };
         Server.prototype.registerStaticFolders = function () {
+            this._express.use("/bower_components", this.express.static("bower_components"));
+            this._express.use("/node_modules", this.express.static("node_modules"));
+            this._express.use("/polymer_elements", this.express.static("polymer_elements"));
             this._express.use("/stylesheets", this.express.static("stylesheets"));
+            this._express.use("/javascripts", this.express.static("javascripts"));
             this._express.use("/images", this.express.static("images"));
         };
         Server.prototype.registerRoutes = function () {

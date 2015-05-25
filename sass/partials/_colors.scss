@@ -1,0 +1,10 @@
+$frame-color: black;
+$hover-color: yellow;
+$selected-color: orange;
+$danger-color: red;
+
+@mixin bottom-border-colorize($color) {
+  color: invert($color);
+  background-color: lighten($color, 25%);
+  border-bottom: 1px solid $color;
+}

@@ -1,0 +1,39 @@
+@import "compass/layout/stretching";
+@import "compass/css3";
+
+@import "../partials/_colors.scss";
+
+nav {
+  ol {
+    li {
+      @include transition(all 0.3s ease-in-out);
+
+      width: 100px;
+
+      color: invert($frame-color);
+      background-color: lighten($frame-color, 50%);
+
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      list-style-type: none;
+      border-bottom: 1px solid black;
+
+      &.selected {
+        @include bottom-border-colorize($selected-color);
+      }
+
+      &:hover {
+        @include bottom-border-colorize($hover-color);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        padding: 0;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}

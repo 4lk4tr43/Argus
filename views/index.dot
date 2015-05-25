@@ -3,6 +3,11 @@ layout: layouts/master.dot
 title: Argus
 ---
 
+[[##head:
+    <link rel="import" href="/polymer_elements/main-navigation.html">
+#]]
+
 [[##body:
-    Hello index page. Hello User!
+    <main-navigation></main-navigation>
+    [[= partial("partials/copyright.dot") ]]
 #]]

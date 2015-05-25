@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <title>[[= layout.title ]]</title>
 
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/stylesheets/screen.css">
+
+    [[= layout.head ]]
 </head>
 <body>
-    [[= partial("../partials/header.dot", {user: "Login"}) ]]
     [[= layout.body ]]
+
+
 </body>
 </html>
